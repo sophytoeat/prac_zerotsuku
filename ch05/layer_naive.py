@@ -8,7 +8,7 @@ class MulLayer:
 
     def forward(self, x, y):
         self.x = x
-        self.y = y                
+        self.y = y
         out = x * y
 
         return out
@@ -18,7 +18,6 @@ class MulLayer:
         dy = dout * self.x
 
         return dx, dy
-
 
 class AddLayer:
     def __init__(self):
