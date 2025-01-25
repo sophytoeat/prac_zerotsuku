@@ -21,7 +21,6 @@ class Relu:
 
         return dx
 
-
 class Sigmoid:
     def __init__(self):
         self.out = None
@@ -35,7 +34,6 @@ class Sigmoid:
         dx = dout * (1.0 - self.out) * self.out
 
         return dx
-
 
 class Affine:
     def __init__(self, W, b):
